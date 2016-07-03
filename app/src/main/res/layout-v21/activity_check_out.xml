@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anhpham.vuonshop.CheckOutActivity">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinish"
+        android:text="HOÀN TẤT"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_check_out"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_check_out"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_check_out"
+        tools:layout_constraintBottom_creator="1" />
+
+    <TextView
+        android:text="TỔNG CỘNG:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textAllCaps="true"
+        android:id="@+id/textViewCheckOutPrice"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_check_out"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_check_out"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinish"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/recycleViewCheckOut"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_check_out"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_check_out"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_check_out"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCheckOutPrice"
+        android:layout_marginBottom="14dp"
+        tools:layout_constraintBottom_creator="1" />
+</android.support.constraint.ConstraintLayout>
